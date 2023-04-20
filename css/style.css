@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(24, 24, 43);
+    color: yellow;
+    margin: 0;
+}
+header{
+    height: 30px;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(32, 32, 54);
+    border-bottom: 3px dotted yellow;
+    display: flex;
+    position: fixed;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.container{
+    background-color: yellow;
+    padding: 23px;
+    max-width: 200px;
+    margin: 20% auto;
+    transform: scale(2, 2);
+    border-radius: 7px;
+    border: 1px solid rgb(32, 32, 54);
+}
+.display {
+    width: 100%px;
+    height: 25px;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(32, 32, 54);
+    background-color: white;
+    color: rgb(32, 32, 54);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+}
+.teclado {
+    border: 1px solid rgb(32, 32, 54);
+    border-radius: 7px;
+}
+input[type="button"]{
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 2px 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 7px;
+    gap: 2px;
+}
+input[type="button"]:hover{
+    background-color: white;
+    opacity: 0.5;
+}
+#zero{
+    margin: auto;
+    width: 100%;
+}

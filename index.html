@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calc</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+        <p><b>By Thomass</b></p>
+    </header>
+    <div class="container">
+        <div class="display" id="displayid"></div>
+        <div class="teclado">
+            <div>
+                <input type="button" onclick="get('/')" value="/">
+                <input type="button" onclick="get('*')" value="*">
+                <input type="button" onclick="get('-')" value="-">
+                <input type="button" onclick="get('+')" value="+">
+            </div>
+            <div>
+                <input type="button" onclick="get('7')" value="7">
+                <input type="button" onclick="get('8')" value="8">
+                <input type="button" onclick="get('9')" value="9">
+                <input type="button" id="clear" value="C">
+            </div>
+            <div>
+                <input type="button" onclick="get('4')" value="4">
+                <input type="button" onclick="get('5')" value="5">
+                <input type="button" onclick="get('6')" value="6">
+                <input type="button" id="result" value="=">
+            </div>
+            <div>
+                <input type="button" onclick="get('1')" value="1">
+                <input type="button" onclick="get('2')" value="2">
+                <input type="button" onclick="get('3')" value="3">
+                <input type="button" onclick="get('.')" value=".">
+            </div>
+            <div>
+                <input type="button" id="zero" onclick="get('0')" value="0">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
